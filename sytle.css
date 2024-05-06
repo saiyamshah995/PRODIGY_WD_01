@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 90%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 60.92%
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+ /* Track  */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+  }
+   
+ /* Handle  */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.839); 
+  }
+  
+ /* Handle on hover  */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  } 
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: top 0.3s;
+    z-index: 999;
+}
+
+.img{
+    z-index: 999;
+}
+
+.logo{
+    width: 70px;
+    margin-left: 6rem ;
+    -webkit-box-shadow: -1px -6px 188px -27px rgba(0,0,0,1);
+    -moz-box-shadow: -1px -6px 188px -27px rgba(0,0,0,1);
+    box-shadow: -1px -6px 188px -27px rgba(0,0,0,1);    
+    border-radius: 50%;
+}
+
+nav{
+    width: 40%;
+}
+
+.nav-menu{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    padding: 0 50px;
+    list-style: none;
+    background-color: rgb(255, 129, 91);
+    border-radius: 50px;
+}
+
+li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 12px;
+    
+}
+
+li a:hover{
+    color: rgb(45, 45, 45);
+}
+
+
+
+.humbutton{
+    display: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.humburger{
+   
+    font-size: 2rem;
+    margin-right: 3rem;
+    
+}
+
+
+/* side barr styling */
+
+.side-bar
+{
+    position: fixed;
+    width: 45px;
+    height: 50vh;
+    top: 25vh;
+    left: 2%;
+    padding: 20px 5px;
+    background-color:  rgb(255, 129, 91);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    transition: left 0.3s;
+}
+
+.side-bar a i{
+    color: white;
+    font-size: 3rem;
+}
+
+
+.side-bar a i:hover{
+    color: rgb(45, 45, 45);
+}
+
+
+
+/* home */
+
+.home{
+    width: 100%;
+    height: 100vh;
+    /* background-color: blueviolet; */
+}
+
+
+
+
+/* upbutton? */
+
+.upbutton{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(255, 129, 91);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: bottom 0.3s;
+}
+
+.upbutton i{
+    font-size: 2rem;
+    color: white;
+}
+
+
+/* sec-1 */
+
+.sec-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+
+.content-box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.mainbox{
+    margin-top: 30px;
+    width: 70%;
+    height: 80%;
+}
+
+.main-text{
+  font-family: "Pacifico", cursive;
+  font-size: 4vw;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 20px;
+}
+
+.para-text{
+    padding-left: 20px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: rgba(0, 0, 0, 0.668);
+}
+
+
+.expo-btn{
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.btn-ex{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgb(255, 129, 91);
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin-top: 10px;
+}
+
+.btn-ex:hover{
+    background-color: rgb(211, 73, 31);
+}
+
+.hidden {
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 2s ease; /* Apply a smooth transition to opacity */
+  }
+
+
+
+/* sec-2 */
+
+.sec-2{
+    background-image: url("images/bg.png");
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+
+}
+
+.about-text{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-ab{
+    font-size: 5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    padding-top: 10rem;
+    color: white;
+    text-align: center;
+}
+
+.text-ab-para{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    padding-top: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.logo-2{
+    width: 20%;
+    margin-top: 6rem;
+    border-radius: 50%;
+}
+
+.ser{
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;  
+}
+
+.card-head{
+    font-size: 2rem;
+}
+
+.card-body a{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    background-color: rgb(255, 129, 91);
+    border: none;
+}
+
+.card-body a:hover{
+    background-color: rgb(211, 73, 31);
+}
+
+.card-body a:focus{
+    background-color: rgb(211, 73, 31);
+}
+
+.sec-4{
+    background-image: url("images/con-bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.head-con{
+    width: 100%;
+    height: 70px;
+
+}
+
+.contact-form{
+    width: 50%;
+    height: 70%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.con-head{
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.copyright{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 129, 91);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p{
+    font-size: 1.6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: white;
+}
+
+.form{
+    margin-top: 50px;
+    width: 80%;
+    height: 80%;
+}
+
+.form input{
+    font-size: 1.6rem;
+}
+
+.label{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+
+.form a{
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+
+@media screen and (max-width: 1100px) {
+    header{
+        justify-content: space-between;
+        background-color: rgb(255, 129, 91);
+    }
+    
+    .logo{
+        margin-left: 2rem;
+    }
+
+    /* header{
+        /* position: relative; 
+    } */
+
+    .main-text{
+        padding-left: 0;
+        padding-top: 10px;
+        font-size: 30px;
+
+    }
+
+    .para-text{
+        padding-left:0 ;
+        font-size: 12px;
+    }
+
+    .expo-btn{
+        padding-left:0 ;
+        margin-left: 0;
+    }
+
+   .nav-menu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+
+   }
+
+   .nav-menu.active{ 
+    display: flex;
+   }
+
+    .humbutton{
+        display: block;
+        margin-right: 0;
+        
+    }
+
+    .humburger{
+        color: white;
+        z-index: 999;
+    }
+
+
+    .side-bar{
+        display: none;
+    }
+    
+    .sec-2{
+        background-image: url("images/mb-bg.jpeg");
+        background-size: cover;
+        
+    }
+
+    .text-ab{
+        font-size: 3rem;
+        
+    }
+    
+    .text-ab-para{
+        font-size: 1.3rem;
+        
+    }
+
+    .ser{
+        padding-top: 2rem;
+    }
+
+
+    .sec-3{
+        width: 100%;
+        height: 210vh;
+
+    }
+
+    .contact-form{
+        width: 80%;
+        height: 65%;
+    }
+
+    .copyright p{
+        font-size: 1.2rem;
+    }
+  }
